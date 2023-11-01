@@ -1,5 +1,6 @@
 RewriteEngine on
 
-RewriteCond %{REQUEST_URI} !^/log4php/2.3.0.*$
-RewriteCond %{REQUEST_URI} !^/log4php/2.2.1.*$
-RewriteRule ^(.*)$ /log4php/2.3.0/$1
+RewriteCond %{REQUEST_URI} !^/log4php/2.2.1
+RewriteCond %{REQUEST_URI} !^/log4php/2.3.0
+RewriteCond %{REQUEST_URI} !^/log4php/latest
+RewriteRule ^(.*)$ /log4php/latest/$1 [R]
